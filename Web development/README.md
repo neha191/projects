@@ -1,1 +1,1 @@
-Learning web development using HTML, CSS, FLASK, JAVASCRIPT
+Learning web development using HTML, CSS, Flask, Bootstrap, Javascript
