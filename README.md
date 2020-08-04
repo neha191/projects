@@ -1,4 +1,4 @@
-# this repository is for the personal projects
+# this repository is for personal projects while learning programming from various sources.
 I have made.
 WEB DEVELOPMENT
 1). TO-DO web application while learning Flask
