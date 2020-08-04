@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head1 %}
+<link rel="stylesheet" href=".\static\editstyle.css">
+
+{% endblock %}
+
+{% block title %}-Update a blog{% endblock %}
+
+{% block body %}
+<div class="body">
+<h2>update the blog</h2>
+ <div class="form">
+        <form action="/update/{{blog.id}}" method="POST">
+            <input type="text" name="author" id="author" value="{{blog.author}}"><br>
+            <input type="text" name="content" id="content" value="{{blog.content}}">
+            <input type="submit" value="Update Blog">
+        </form>
+    </div>
+  </div>
+{% endblock %}

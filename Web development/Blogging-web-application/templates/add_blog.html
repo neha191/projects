@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head1 %}
+<link rel="stylesheet" href=".\static\navbarss.css">
+{% endblock %}
+
+{% block title %}-Add a blog{% endblock %}
+
+{% block body %}
+{% for blog in blogs %}
+<h3>Written by-{{blog.author}}</h2>
+<div class="para"><p>{{blog.content}}</p></div>
+<div class="date"><h5>Date of upload-{{blog.date_created.date()}} </h5>
+<h5>Blog number {{blog.id}}</h5></div>
+<br>
+<button class="btn warning"><a href="/delete/{{blog.id}}">Delete</a></button>
+<button class="btn success"><a href="/update/{{blog.id}}" target="_blank">Update</a></button>
+{% endfor %}
+ <div class="form">
+        <form action="/add-blog" method="POST">
+            <input type="text" name="author" id="author" placeholder="author"><br>
+            <input type="text" name="content" id="content" placeholder="contents of blog">
+            <input type="submit" value="Add Blog">
+        </form>
+    </div>
+{% endblock %}
