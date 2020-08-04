@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head>
+</head>
+<style>
+.heading{text-align:center;
+padding:5px;
+font-size:2em;
+font-weight:bold;
+background-color:black;
+color:white;
+font-style:uppercase;
+}
+body{padding:0;
+margin:0;}
+.web-development{padding:10px 15px;
+font-size:1.1em;
+background-color:rgb(216, 219, 214);
+}
+li,a,button{font-family:"Montserrat", sans-serif;
+font-weight:16px;
+color:#f1f1f1;
+text-decoration:none;
+}
+header{display:flex;
+justify-content: space-between;
+align-items:center;
+padding:5px 3px;
+color:black;
+background-color:#504954;
+}
+.nav_links{list-style:none;}
+.nav_links li{ display: inline-block;
+padding:0px 0px;
+}
+.nav_links li a{transition:all 0.3s ease 0s;
+color:white;}
+.nav_links li a : hover{color:#008a9}
+button{padding: 9px 25px;
+background-color: rgb(0, 131, 179);
+border:none;
+border-radius:50px;
+cursor:pointer;
+transition: all 0.3s ease 0s;}
+button:hover{background-color: rgba(0,136,169,0.8);}
+.inner{padding:10px;
+				}
+</style>
+
+
+<body>
+<header>
+<nav>
+<ul class="nav_links">
+<li><a href="index1.html">About</a></li>
+&nbsp;<span Id="dash">|</span>
+<li><a href="projects.html">Projects</a></li>
+</ul></nav>
+<a class="cta" href="contactme.html"><button>Contact
+</button></a></header>
+
+<div class="inner">
+(not yet working)
+					<h2>Contact Me</h2>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+						
+					</form></body>
+</html>
